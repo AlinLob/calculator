@@ -1,7 +1,7 @@
 .calc {
     margin: 50px auto;
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
     /*border: 1px solid #000; */
     border-radius: 20px;
     background: #FF7AA7;
@@ -38,17 +38,18 @@
     padding: 10px;
     /*border: 3px solid #FF1493; */
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
-    width: 255px;
-    height: 80px;
+    width: 355px;
+    height: 100px;
     border: 2px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
     transform: perspective(600px) rotateX(10deg);
-    
+    text-align: center;
+    line-height: 80px;
 }
 .calc-screen p {
     text-align: right;
@@ -67,29 +68,32 @@
     "four five six minus"
     "one two three plus"
     "zero zero dot equal";
-    grid-gap: 8px;
+    grid-gap: 12px;
     justify-items: center;
 
 }
 
 .btn {
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
     background: #FF1493;
     border-radius: 50%;
     text-align: center;
-    line-height: 60px;
-    font-size: 1.6rem;
+    line-height: 70px;
+    font-size: 1.8rem;
     cursor: pointer;
     user-select: none;
     color: white;
     transition: background-color 0.3s, transform 0.2s;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn.zero {
     grid-area: zero;
-    width: 100%;
+    width: 90%;
     border-radius: 34px;
 }
 
